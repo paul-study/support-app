@@ -3,215 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Support App</title>
+    <title>Support App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>🌟 Mental Health Support App</h1>
-        <p>Your daily companion for emotional wellness and self-care</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Support Center</h1>
+            <p class="subtitle">We're here to help you</p>
+        </header>
 
-    <nav>
-        <button class="nav-btn active" data-section="activities">Activities</button>
-        <button class="nav-btn" data-section="manage">Manage</button>
-        <button class="nav-btn" data-section="resources">Resources</button>
-    </nav>
+        <main>
+            <section class="search-section">
+                <input type="text" id="search" placeholder="Search for help..." class="search-input">
+                <button class="search-button">Search</button>
+            </section>
 
-    <main>
-        <!-- Activities Section -->
-        <section id="activities" class="section active">
-            <h2>Wellness Activities</h2>
-            <div class="activities-grid">
-                <div class="activity-card">
-                    <h3>🧘 Breathing Exercise</h3>
-                    <p>Take a moment to practice deep breathing</p>
-                    <button onclick="startBreathing()">Start</button>
-                </div>
-                <div class="activity-card">
-                    <h3>📝 Gratitude Journal</h3>
-                    <p>Write down things you're grateful for today</p>
-                    <button onclick="openGratitude()">Write</button>
-                </div>
-                <div class="activity-card">
-                    <h3>🎯 Mindfulness Exercise</h3>
-                    <p>5-minute guided mindfulness practice</p>
-                    <button onclick="startMindfulness()">Begin</button>
-                </div>
-                <div class="activity-card">
-                    <h3>💪 Positive Affirmations</h3>
-                    <p>Get your daily dose of positivity</p>
-                    <button onclick="showAffirmation()">Get Affirmation</button>
-                </div>
-                <div class="activity-card">
-                    <h3>🚶 Movement Break</h3>
-                    <p>Quick physical activity to boost mood</p>
-                    <button onclick="startMovement()">Start Moving</button>
-                </div>
-                <div class="activity-card">
-                    <h3>🎨 Creative Expression</h3>
-                    <p>Draw or write freely to express yourself</p>
-                    <button onclick="openCreative()">Create</button>
-                </div>
-                <div class="activity-card">
-                    <h3>🌳 Nature Sounds</h3>
-                    <p>Relax with calming nature sounds</p>
-                    <button onclick="playNatureSounds()">Listen</button>
-                </div>
-                <div class="activity-card">
-                    <h3>📖 Reading Corner</h3>
-                    <p>Uplifting quotes and short stories</p>
-                    <button onclick="showReading()">Read</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Manage Section -->
-        <section id="manage" class="section">
-            <h2>Manage Your Wellness</h2>
-            <div class="manage-grid">
-                <div class="manage-card">
-                    <h3>😊 Mood Tracker</h3>
-                    <p>Log how you're feeling today</p>
-                    <div id="mood-tracker">
-                        <button class="mood-btn" onclick="logMood('great')">😄 Great</button>
-                        <button class="mood-btn" onclick="logMood('good')">🙂 Good</button>
-                        <button class="mood-btn" onclick="logMood('okay')">😐 Okay</button>
-                        <button class="mood-btn" onclick="logMood('bad')">😟 Bad</button>
-                        <button class="mood-btn" onclick="logMood('awful')">😢 Awful</button>
+            <section class="categories">
+                <h2>Browse by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="icon">📚</div>
+                        <h3>Getting Started</h3>
+                        <p>Learn the basics</p>
                     </div>
-                    <div id="mood-history"></div>
-                </div>
-                <div class="manage-card">
-                    <h3>✅ Daily Goals</h3>
-                    <p>Set and track your daily intentions</p>
-                    <div id="goals-container">
-                        <input type="text" id="goal-input" placeholder="Enter a goal...">
-                        <button onclick="addGoal()">Add Goal</button>
-                        <ul id="goals-list"></ul>
+                    <div class="category-card">
+                        <div class="icon">⚙️</div>
+                        <h3>Account Settings</h3>
+                        <p>Manage your account</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon">💳</div>
+                        <h3>Billing</h3>
+                        <p>Payment & invoices</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon">🔒</div>
+                        <h3>Security</h3>
+                        <p>Keep your data safe</p>
                     </div>
                 </div>
-                <div class="manage-card">
-                    <h3>💤 Sleep Tracker</h3>
-                    <p>Monitor your sleep patterns</p>
-                    <div id="sleep-tracker">
-                        <label>Hours slept:
-                            <input type="number" id="sleep-hours" min="0" max="24" step="0.5">
-                        </label>
-                        <button onclick="logSleep()">Log Sleep</button>
-                        <div id="sleep-history"></div>
+            </section>
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4>How do I reset my password?</h4>
+                        <p>Click on "Forgot Password" on the login page and follow the instructions.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How can I contact support?</h4>
+                        <p>You can reach us via email at support@example.com or through the chat widget.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What payment methods do you accept?</h4>
+                        <p>We accept all major credit cards, PayPal, and bank transfers.</p>
                     </div>
                 </div>
-                <div class="manage-card">
-                    <h3>💧 Hydration Tracker</h3>
-                    <p>Track your water intake</p>
-                    <div id="water-tracker">
-                        <p>Glasses today: <span id="water-count">0</span></p>
-                        <button onclick="addWater()">Add Glass 💧</button>
-                        <button onclick="resetWater()">Reset</button>
-                    </div>
-                </div>
-                <div class="manage-card">
-                    <h3>📊 Progress Dashboard</h3>
-                    <p>View your wellness journey</p>
-                    <button onclick="showProgress()">View Progress</button>
-                    <div id="progress-display"></div>
-                </div>
-                <div class="manage-card">
-                    <h3>⏰ Reminder Settings</h3>
-                    <p>Set reminders for self-care</p>
-                    <button onclick="setReminder()">Configure</button>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
-        <!-- Resources Section -->
-        <section id="resources" class="section">
-            <h2>Support Resources</h2>
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <h3>📚 Self-Help Guides</h3>
-                    <ul>
-                        <li><a href="#" onclick="showGuide('anxiety')">Managing Anxiety</a></li>
-                        <li><a href="#" onclick="showGuide('stress')">Stress Reduction Techniques</a></li>
-                        <li><a href="#" onclick="showGuide('sleep')">Better Sleep Habits</a></li>
-                        <li><a href="#" onclick="showGuide('mindfulness')">Mindfulness 101</a></li>
-                    </ul>
-                </div>
-                <div class="resource-card">
-                    <h3>🎧 Meditation Library</h3>
-                    <ul>
-                        <li><a href="#" onclick="playMeditation('5min')">5-Minute Quick Reset</a></li>
-                        <li><a href="#" onclick="playMeditation('10min')">10-Minute Deep Relaxation</a></li>
-                        <li><a href="#" onclick="playMeditation('body')">Body Scan Meditation</a></li>
-                        <li><a href="#" onclick="playMeditation('sleep')">Sleep Meditation</a></li>
-                    </ul>
-                </div>
-                <div class="resource-card">
-                    <h3>🆘 Crisis Support</h3>
-                    <p>If you're in crisis, please reach out:</p>
-                    <ul>
-                        <li>National Suicide Prevention Lifeline: 988</li>
-                        <li>Crisis Text Line: Text HOME to 741741</li>
-                        <li>International: findahelpline.com</li>
-                    </ul>
-                </div>
-                <div class="resource-card">
-                    <h3>💡 Mental Health Tips</h3>
-                    <ul>
-                        <li>Practice self-compassion daily</li>
-                        <li>Stay connected with loved ones</li>
-                        <li>Maintain a regular sleep schedule</li>
-                        <li>Exercise regularly for mood boost</li>
-                        <li>Limit social media when needed</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Modals -->
-    <div id="breathing-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('breathing-modal')">&times;</span>
-            <h2>Breathing Exercise</h2>
-            <div id="breathing-circle" class="breathing-circle">
-                <p id="breathing-text">Breathe In</p>
-            </div>
-            <p id="breathing-instruction">Follow the circle</p>
-        </div>
+        <footer>
+            <p>Need more help? <a href="#contact">Contact us</a></p>
+        </footer>
     </div>
-
-    <div id="gratitude-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('gratitude-modal')">&times;</span>
-            <h2>Gratitude Journal</h2>
-            <textarea id="gratitude-text" placeholder="What are you grateful for today?"></textarea>
-            <button onclick="saveGratitude()">Save Entry</button>
-            <div id="gratitude-entries"></div>
-        </div>
-    </div>
-
-    <div id="affirmation-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('affirmation-modal')">&times;</span>
-            <h2>Your Daily Affirmation</h2>
-            <p id="affirmation-text" class="affirmation"></p>
-            <button onclick="showAffirmation()">Get Another</button>
-        </div>
-    </div>
-
-    <div id="mindfulness-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('mindfulness-modal')">&times;</span>
-            <h2>Mindfulness Exercise</h2>
-            <div id="mindfulness-content">
-                <p id="mindfulness-instruction"></p>
-                <button id="mindfulness-btn" onclick="nextMindfulness()">Start</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

@@ -1,107 +1,75 @@
-# Mental Health Support App 🌟
+# 💙 Support App - You're Not Alone
 
-A comprehensive web application designed to help users manage their mental health and emotional wellness through various activities, tracking tools, and resources.
+An emotional support web application built with React to help people who are struggling in life or going through a breakup.
 
 ## Features
 
-### 🧘 Wellness Activities
-- **Breathing Exercise**: Interactive guided breathing with visual cues
-- **Gratitude Journal**: Record daily gratitude with persistent storage
-- **Mindfulness Exercise**: Step-by-step 5-minute mindfulness practice
-- **Positive Affirmations**: Daily motivational messages
-- **Movement Break**: Quick physical activities to boost mood
-- **Creative Expression**: Prompts for artistic self-expression
-- **Nature Sounds**: Calming audio visualization
-- **Reading Corner**: Uplifting quotes and stories
+- **Multiple Support Categories**
+  - General emotional support
+  - Breakup healing messages
+  - Anxiety relief affirmations
+  - Motivational quotes
 
-### 📊 Management Tools
-- **Mood Tracker**: Log and visualize daily emotional states
-- **Daily Goals**: Set, track, and complete personal goals
-- **Sleep Tracker**: Monitor sleep patterns and duration
-- **Hydration Tracker**: Track daily water intake
-- **Progress Dashboard**: View comprehensive wellness statistics
-- **Reminder Settings**: Configure self-care reminders
+- **Interactive Elements**
+  - Navigate through supportive messages
+  - Random message generator
+  - Breathing exercise guide
+  - Crisis support information
 
-### 📚 Support Resources
-- **Self-Help Guides**: Information on managing anxiety, stress, sleep, and mindfulness
-- **Meditation Library**: Various guided meditation options
-- **Crisis Support**: Important helpline numbers and resources
-- **Mental Health Tips**: Practical advice for daily wellness
+- **Responsive Design**
+  - Beautiful gradient background
+  - Smooth animations
+  - Mobile-friendly interface
+  - Calming color scheme
 
-## Getting Started
+## Installation
 
-### Quick Start
-1. Open `index.html` in your web browser
-2. No installation or setup required!
-3. All data is stored locally in your browser
+1. Clone the repository:
+```bash
+git clone https://github.com/paul-study/support-app.git
+cd support-app
+```
 
-### Usage
-- Navigate between sections using the top navigation buttons
-- Click on any activity card to start
-- Track your progress in the "Manage" section
-- Access resources and guides in the "Resources" section
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Technical Details
+3. Start the development server:
+```bash
+npm start
+```
 
-### Technologies Used
-- Pure HTML5, CSS3, and JavaScript
-- No external dependencies required
-- LocalStorage for data persistence
-- Responsive design for mobile and desktop
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Data Storage
-All user data is stored locally in the browser using LocalStorage:
-- Mood entries
-- Goals and completion status
-- Sleep logs
-- Gratitude journal entries
-- Water intake count
+## Available Scripts
 
-### Browser Compatibility
-Works on all modern browsers:
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+### `npm start`
+Runs the app in development mode.
 
-## Privacy
+### `npm test`
+Launches the test runner in interactive watch mode.
 
-- All data stays on your device
-- No server communication
-- No tracking or analytics
-- Complete privacy and control over your information
+### `npm run build`
+Builds the app for production to the `build` folder.
 
-## Features Overview
+## Technologies Used
 
-### Interactive Elements
-- Animated breathing circle with timed cycles
-- Modal dialogs for focused activities
-- Real-time progress tracking
-- Persistent data across sessions
+- React 18
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
-### Wellness Activities
-Each activity is designed based on evidence-based mental health practices:
-- **Breathing exercises** help reduce anxiety and stress
-- **Gratitude journaling** promotes positive thinking
-- **Mindfulness** improves present-moment awareness
-- **Affirmations** build self-esteem and confidence
-- **Movement** boosts mood through physical activity
+## Support Resources
 
-## Support
-
-If you're experiencing a mental health crisis, please reach out:
-- National Suicide Prevention Lifeline: 988
-- Crisis Text Line: Text HOME to 741741
-- International: [findahelpline.com](https://findahelpline.com)
-
-## Contributing
-
-This is a personal wellness tool. Feel free to fork and customize for your own needs.
+If you or someone you know is in crisis:
+- **National Suicide Prevention Lifeline**: 988 (US)
+- **Crisis Text Line**: Text HOME to 741741
 
 ## License
 
-MIT License - feel free to use and modify for personal use.
+MIT
 
-## Acknowledgments
+## Contributing
 
-Built with care for mental health and wellness. Remember: it's okay to ask for help, and taking care of your mental health is a sign of strength. 💙
+Contributions are welcome! Feel free to open issues or submit pull requests to add more supportive messages or features.
